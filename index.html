@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="robots" content="noindex, nofollow">
+  <script>
+    if (window.self !== window.top) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      window.addEventListener('message', function(e) {
+        if (e.data && e.data.type === 'poli-theme') {
+          document.documentElement.setAttribute('data-theme', e.data.light ? 'light' : 'dark');
+        }
+      });
+    }
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Check whether body jewelry is MR Safe, MR Conditional, or MR Unsafe before an MRI scan. Covers titanium, BioFlex, steel, silver, gold, and 17 materials classified under ASTM F2503.">
+  <title>MRI Safety Checker — Body Jewelry | Poli International</title>
+
+  <meta property="og:type"        content="website">
+  <meta property="og:title"       content="MRI Safety Checker — Body Jewelry | Poli International">
+  <meta property="og:description" content="Is your body jewelry MRI safe? Search 17 materials classified under ASTM F2503 — MR Safe, MR Conditional, or MR Unsafe.">
+  <meta property="og:url"         content="https://poliinternational.com/mri-safety-checker/">
+  <meta property="og:site_name"   content="Poli International">
+  <meta property="og:image"       content="https://poliinternational.com/uploads/branding/poli-international-company-logo.png">
+
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="MRI Safety Checker — Body Jewelry | Poli International">
+  <meta name="twitter:description" content="Check body jewelry MRI safety status: MR Safe, MR Conditional, or MR Unsafe under ASTM F2503.">
+  <meta name="twitter:image"       content="https://poliinternational.com/uploads/branding/poli-international-company-logo.png">
+
+  <link rel="stylesheet" href="/tools/mri-safety-checker/css/style.css">
+</head>
+<body>
+
+<div class="tool-wrapper">
+
+  <!-- Header -->
+  <header class="tool-header">
+    <div class="tool-header__badge">
+      <span>🧲</span> ASTM F2503 Classification
+    </div>
+    <h1>MRI Safety Checker — Body Jewelry</h1>
+    <p>
+      Search any body jewelry material to check its MRI safety classification:
+      MR Safe, MR Conditional, or MR Unsafe — based on ASTM F2503.
+    </p>
+  </header>
+
+  <!-- ASTM note -->
+  <div class="astm-note">
+    Classifications follow <strong>ASTM F2503</strong> (Standard Practice for Marking Medical Devices
+    for Safety in the Magnetic Resonance Environment).
+    Always confirm with the attending radiographer before scanning — site protocols vary.
+  </div>
+
+  <!-- Tabs -->
+  <div class="tabs" role="tablist">
+    <button class="tab-btn active" data-tab="search" role="tab" aria-selected="true">
+      🔍 Search material
+    </button>
+    <button class="tab-btn" data-tab="browse" role="tab" aria-selected="false">
+      📋 Browse all materials
+    </button>
+  </div>
+
+  <!-- ── Search tab ─────────────────────────────────────────────── -->
+  <div id="panel-search" class="tab-panel active">
+    <div class="input-card">
+      <label class="input-label" for="search-input">Material or jewelry type</label>
+      <div class="search-row">
+        <input
+          type="text"
+          id="search-input"
+          class="input-field"
+          placeholder="e.g. BioFlex, titanium, sterling silver, surgical steel, gold…"
+          autocomplete="off"
+          spellcheck="false"
+        >
+        <button id="search-btn" class="btn btn-primary">Check</button>
+      </div>
+      <p class="input-hint">
+        Accepts material names, alloy grades, and common aliases.
+        Covers 17 body jewelry materials including polymers, implant-grade metals, and ferromagnetic alloys.
+      </p>
+    </div>
+    <div id="search-results"></div>
+  </div>
+
+  <!-- ── Browse tab ────────────────────────────────────────────── -->
+  <div id="panel-browse" class="tab-panel">
+    <div id="browse-container"></div>
+  </div>
+
+  <!-- Disclaimer -->
+  <div class="disclaimer">
+    <strong>Clinical disclaimer:</strong> This tool is for informational purposes only and does not replace
+    clinical judgement or site-specific MRI safety protocols. Always confirm jewelry material and
+    MR condition with the attending radiographer or MRI safety officer before scanning.
+    Patients with implanted devices should follow their implant-specific guidance.
+    MR Conditional classifications depend on field strength, SAR limits, and scan duration —
+    confirm these parameters with your facility.
+  </div>
+
+</div>
+
+<script src="/tools/mri-safety-checker/js/mri-data.js"></script>
+<script src="/tools/mri-safety-checker/js/app.js"></script>
+</body>
+</html>
