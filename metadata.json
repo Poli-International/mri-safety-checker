@@ -1,0 +1,8 @@
+{
+  "name": "MRI Safety Checker: Body Jewelry-V2",
+  "description": "Look up what body jewelry materials are made of and how they behave near an MRI scanner under ASTM F2503 standards.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
