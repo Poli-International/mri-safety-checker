@@ -1,0 +1,13 @@
+/* Print styles for Poli International tools */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+  .tabs, .search-row, .btn, .card-chevron {
+    display: none !important;
+  }
+  .result-card .card-body {
+    display: block !important;
+  }
+}
