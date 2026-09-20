@@ -1,0 +1,9 @@
+{
+  "name": "MRI Safety Checker: Body Jewelry",
+  "short_name": "MRI Checker",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0d1117",
+  "theme_color": "#0d1117"
+}
