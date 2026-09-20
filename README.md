@@ -1,90 +1,59 @@
-# MRI Safety Checker, Body Jewelry
+# MRI Preparation Guide: Body Jewelry
 
-> **Check whether body jewelry is MR Safe, Conditional, or Unsafe before an MRI. 17 materials classified under ASTM F2503, BioFlex®, titanium, steel.**
-
-[![License](https://img.shields.io/github/license/Poli-International/mri-safety-checker)](LICENSE)
-[![Last Commit](https://img.shields.io/github/last-commit/Poli-International/mri-safety-checker)](https://github.com/Poli-International/mri-safety-checker/commits/main)
-[![GitHub Stars](https://img.shields.io/github/stars/Poli-International/mri-safety-checker?style=social)](https://github.com/Poli-International/mri-safety-checker/stargazers)
-
-**Live Demo:** [https://poliinternational.com/tools/mri-safety-checker/](https://poliinternational.com/tools/mri-safety-checker/)
+A free, patient-centered preparation guide and material reference tool published by Poli International for people with piercings scheduled for a magnetic resonance imaging (MRI) scan, and for body piercers answering client questions.
 
 ---
 
-## 🎯 Overview
+## What This Tool Does
 
-Check whether body jewelry is MR Safe, Conditional, or Unsafe before an MRI. 17 materials classified under ASTM F2503, BioFlex®, titanium, steel.
-
-**Category:** Piercing Science
-
-This is a free, open-source widget from the [Poli International Widget Suite](https://poliinternational.com/tools/) - a collection of practical tools for tattoo and piercing studios, artists, and clients. It runs entirely in the browser; no data is sent to a server.
+When a client or patient has an MRI scan booked, this reference clarifies what body jewellery materials are made of, explains why non-ferromagnetic metals like titanium can still require removal due to RF heating or image artifacts, and prompts the user through an anatomical checklist of all piercings. It produces a printable **Radiographer Disclosure Card** (in any of seven languages) that the patient can take to their appointment so the attending imaging team has complete, accurate technical information to make the scanning decision.
 
 ---
 
-## ✨ Features
+## Core Safety Principles
 
-- ✅ **MRI Body Jewelry Safe**
-- ✅ **MR Safe Jewelry**
-- ✅ **Titanium MRI**
-- ✅ **BioFlex MRI Retainer**
-- ✅ **ASTM F2503**
-- ✅ **Body Jewelry MRI Scan**
-- ✅ **Responsive Design** - works on desktop, tablet, and mobile.
-- ✅ **Free & Open Source** - MIT licensed.
+1. **The MRI Safety Staff Decides**: The decision to scan with any item in place belongs strictly to the radiographers and MRI safety officers at the scanning facility. No third party or software can grant clearance.
+2. **Material Composition Only**: Materials are described by chemical/metallurgical composition and physical behavior (metallic status, magnetic response, RF induction potential, susceptibility artifact). The tool does **not** assign device-level ASTM F2503 "MR Safe", "MR Conditional", or "MR Unsafe" labels.
+3. **BioFlex® Body Jewelry**: Described accurately as medical-grade polypropylene random copolymer (PP-R). It is non-metallic, contains no metal or conductive fillers, and is completely distinct from PTFE.
+4. **Advance Communication**: Encourages patients to contact their scan facility 3–5 days ahead using a prepared phone script, and to consult a professional body piercer for sterile retainer insertion or stuck jewellery removal.
 
 ---
 
-## 🎬 Demo
+## Features
 
-### Try It Live
-
-**👉 [Use the tool now](https://poliinternational.com/tools/mri-safety-checker/)**
+- **Body Piercing Checklist**: Step-by-step checklist covering ears, oral sites, facial, torso, genital, surface anchors, and closed piercings to ensure full disclosure.
+- **Dermals & Surface Anchors Focus**: Highlighted advice explaining why subdermal base plates cannot be removed at home and must be raised with the scan team in advance.
+- **Multi-Language Disclosure Card**: Generates a clean printable card in English, German, Spanish, French, Italian, Dutch, or Portuguese to present to radiographers worldwide.
+- **Phone Script**: Verbatim script for patients calling their imaging department before the scan.
+- **Zero Third-Party Dependencies**: Runs 100% locally in the browser with no external requests, trackers, or cookies.
 
 ---
 
-## 🚀 Installation
+## Running Locally
 
-### Option 1: Use Online (Recommended)
-
-No installation needed! Just visit:
-**[https://poliinternational.com/tools/mri-safety-checker/](https://poliinternational.com/tools/mri-safety-checker/)**
-
-### Option 2: Run Locally
-
-This tool is pure HTML/CSS/JS - no build step. Clone the repo and open `index.html`:
+To run locally with Node.js:
 
 ```bash
-git clone https://github.com/Poli-International/mri-safety-checker.git
-cd mri-safety-checker
-# open index.html in your browser
+npm install
+npm run dev
+```
+
+Or serve the directory with any static file server:
+
+```bash
+npx serve .
 ```
 
 ---
 
-## 🤝 Contributing
+## Documentation
 
-We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+- [User Guide](docs/USER-GUIDE.md)
+- [Technical Documentation](docs/TECHNICAL-DOCS.md)
+- [Contributing Guidelines](CONTRIBUTING.md)
 
 ---
 
-## 💬 Support
+## License
 
-### Get Help
-
-- 📧 **Email**: <support@poliinternational.com>
-- 🐛 **Bug Reports**: [GitHub Issues](https://github.com/Poli-International/mri-safety-checker/issues)
-
----
-
-<div align="center">
-
-**Made with ❤️ by [Poli International](https://poliinternational.com)**
-
-[Website](https://poliinternational.com) • [Tools](https://poliinternational.com/tools/) • [GitHub](https://github.com/Poli-International)
-
-</div>
+MIT License. Published by Poli International.
